@@ -1,0 +1,83 @@
+/* sidebar.css */
+
+
+.sidebar {
+  
+  position: fixed;
+  top: 56px; /* Adjust top position to leave space for the navbar */
+  left: 0;
+  height: calc(100% - 60px); /* Adjust height to fit remaining space */
+  width: 250px; /* Adjust width as needed */
+  background-color: #3f51b5; /* Indigo color for the sidebar */
+  color: #fff; /* Text color */
+  z-index: 1000; /* Ensure sidebar appears above other content */
+  padding-top: 20px; /* Padding for sidebar header */
+  transition: transform 0.3s ease, width 0.3s ease; /* Add transitions for smoother animation */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  
+}
+
+/* Sidebar Header Styles */
+.sidebar-header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff; /* Add border bottom for separation */
+}
+
+/* Sidebar Menu Styles */
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-menu-item {
+  margin-bottom: 15px;
+}
+
+.sidebar-menu-item a {
+  color: #fff; /* Text color */
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px 20px; /* Add padding for better touch/click experience */
+  transition: background-color 0.3s ease; /* Add transition for background color change */
+}
+
+.sidebar-menu-item a:hover {
+  background-color: #5c6bc0; /* Darker indigo color on hover */
+}
+
+/* Sidebar Footer Styles */
+.sidebar-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.logout{
+  color: white;
+}
+
+/* Media Query for Smaller Devices */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none; /* Hide sidebar on smaller devices */
+  }
+
+  .sidebaropen{
+    display: block;
+    background-color: #3f51b5;
+    transition: transform 0.3s ease, width 0.3s ease; /* Add transitions for smoother animation */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+  }
+
+  .sidebar-footer{
+    display: none;
+  }
+  
+  .content {
+    margin-left: 0; /* Remove margin when sidebar is hidden */
+    width: 100%; /* Occupy full width when sidebar is hidden */
+  }
+}

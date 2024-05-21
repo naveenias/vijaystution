@@ -1,0 +1,97 @@
+/* index.css */
+
+/* Table Container Styles */
+.stutable-container {
+    padding: 40px;
+    padding-left: 290px;
+    padding-top: 60px;
+    background-color: #ecf6fa; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title Style */
+  .title {
+    color: #333; /* Dark text color */
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Table Styles */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* White background */
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Light gray border */
+  }
+  
+  .table th {
+    background-color: #007bff; /* Blue header background */
+    color: #fff; /* White text color */
+    font-weight: bold;
+  }
+  
+  .table th:first-child,
+  .table td:first-child {
+    padding-left: 20px;
+  }
+  
+  /* Responsive Table */
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  /* Button Styles */
+  .btn-view {
+    background-color: #28a745; /* Green button background */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-view:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  .attendheading{
+    margin-top: 26px;
+    color: black;
+    margin-left: 35%;
+    text-decoration: underline;
+  }
+
+
+  @media screen and (max-width: 768px) {
+
+    .stutable-container {
+        padding: 20px;
+        padding-top: 80px;
+        background-color: #f9f9f9; /* Light gray background */
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow-x: auto; /* Add horizontal scrolling for small screens */
+      }
+
+    .table th,
+    .table td {
+      padding: 8px; /* Reduce padding on smaller screens */
+    }
+    
+    .title {
+      font-size: 20px; /* Decrease title font size on smaller screens */
+    }
+
+    .attendheading{
+      margin-left: 0%;
+    }
+  }
+  

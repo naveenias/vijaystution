@@ -1,0 +1,89 @@
+/* index.css */
+
+.sendmessagecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: antiquewhite; /* Light gray background */
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
+  
+  .sendmessagecontent {
+    background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 10 10 50px rgba(56, 15, 190, 0.1);
+    width: 60%;
+    height: 70%;
+    margin-left: 10%;
+    height: 100%;
+  }
+  
+  .sendmessageheading {
+    text-decoration: underline;
+    text-align: center;
+    color: #333333; /* Dark gray text color */
+    
+  }
+  
+  .sendmessagetextarea {
+    background-color: bisque;
+    margin-top: 40px;
+    padding: 10px;
+    border: 2px solid rgb(106, 46, 25); /* Blue border */
+    border-radius: 8px;
+    width: 70%;
+    height: 60%;
+  }
+  
+  .sendmessagebutton {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .notregheading1{
+    color: black;
+    margin-top: 20px;
+  }
+  
+  .btn1 {
+    background-color: orangered; 
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: -70%;
+  }
+  
+  .btn1:hover {
+    background-color: #0056b3; 
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .sendmessagecontainer{
+       padding-top: 20%;
+       padding-bottom: 10%;
+    }
+    .sendmessagecontent{
+      width: 95%;
+      height: 100%;
+      margin-left: 0%;
+    }
+    .sendmessageheading{
+      font-size: 21px;
+      margin-left: -25px;
+    }
+    .sendmessagetextarea{
+      width: 120%;
+      margin-left: -10%;
+      margin-top: 0%;
+    }
+
+    .btn1{
+      margin-left: 0%;
+    }
+  }

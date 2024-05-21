@@ -1,0 +1,16 @@
+.not-found{
+    text-align: center;
+    padding-top: 20%;
+}
+
+  
+  
+
+  @media screen and (max-width:768px){
+    .not-found{
+       padding-top: 70%;
+      }
+  
+    }
+  
+  

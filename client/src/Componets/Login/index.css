@@ -1,0 +1,89 @@
+/* index.css */
+
+/* Add animation to form elements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login {
+  background-image: linear-gradient(to right, #66fff0, #5ed1ff, #5e8cff);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.ff {
+  width: 300px;
+  height: 400;
+  margin: 0 auto;
+  margin-top: 2 00px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  animation: fadeInUp 0.5s ease;
+}
+
+.heading2 {
+  
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Style input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: dodgerblue;
+}
+
+/* Style select dropdown */
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+select:focus {
+  border-color: dodgerblue;
+}
+
+/* Style submit button */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #007bff;
+}

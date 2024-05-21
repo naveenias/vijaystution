@@ -1,0 +1,85 @@
+/* index.css */
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd; /* Add border for each cell */
+}
+
+.table th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Table Row Styles */
+.table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Select Class Dropdown Styles */
+.form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Hover Animation for Table Rows */
+.table tbody tr:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+/* Media Query for screens below 768px */
+@media screen and (max-width: 768px) {
+  /* Date Picker Styles */
+  .react-datepicker__input-container input {
+    font-size: 14px;
+  }
+
+  /* Table Styles */
+  .table th,
+  .table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Select Class Dropdown Styles */
+  .form-select {
+    font-size: 14px;
+  }
+
+  .date-picker-container{
+    width: auto;
+  }
+
+  .select-class-container{
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .attendheading{
+    margin-bottom: 40px;
+    margin-left: -30px;
+  }
+
+  .date{
+    width: 100%;
+  }
+  .tablecontainer{
+    margin-left: 20px;
+  }
+ 
+}

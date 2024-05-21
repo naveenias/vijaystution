@@ -1,0 +1,15 @@
+#sidebar2{
+background-color: #3c63c7;
+}
+
+
+
+@media screen and (max-width: 768px){
+   #sidebar2{
+    margin-top: -24%;
+   margin-left: -12%;
+   margin-right: -12%;
+   margin-bottom: 5%;
+   border-radius: 4px;
+   }
+}

@@ -1,0 +1,134 @@
+/* styles.css */
+
+.tregform {
+    background-image: linear-gradient(to right, #66fff0, #5ed1ff, #5e8cff);
+    padding-top: 5%;
+    padding-bottom: 2%;
+    height: 100vh;
+  }
+  
+  
+  
+  .tregistration-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f6f7;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+   
+  }
+  
+  .tregistration-form h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    text-decoration: underline;
+  }
+  
+  .tregistration-form .form-row {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .tregistration-form .tform-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+   margin-left: -40%;
+  }
+  
+  .tregistration-form .tform-group:last-child {
+    margin-right: 0;
+  }
+  
+  .tregistration-form .tform-label {
+    display: flex;
+    white-space: nowrap;
+    font-size: 18px;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  .tregistration-form .tform-control {
+    width: 55%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    margin-left: 34%;
+    margin-top: -15px;
+    margin-bottom: 30px;
+  }
+  
+  .tregistration-form .tform-control:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  
+  
+  .tregistration-form .btn-primary {
+   
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .tregistration-form .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .tregform {
+      padding-top: 40%;
+      background-size: cover;
+      height: 100vh;
+    }
+  
+    .tregistration-form {
+      max-width: 95%; /* Adjust maximum width for smaller devices */
+      margin: 0 auto;
+      padding: 20px;
+    }
+  
+    
+  
+    .tregistration-form .tform-group {
+      margin-left: 0; /* Remove left margin for form groups */
+      
+    }
+  
+    .tregistration-form .tform-label {
+      margin-right: 0; /* Remove right margin for form labels */
+      margin-bottom: 25px; /* Add bottom margin for form labels */
+      margin-top: 10px;
+    }
+  
+    .tregistration-form .tform-control,
+    .tregistration-form .tform-select {
+      width: 100%; /* Full width for form controls on smaller devices */
+      margin-bottom: 10px;
+      margin-left: 0px;
+    }
+  
+    .tregistration-form .btn-primary {
+      width: 100%; /* Full width for submit button */
+    }
+  
+    .theading{
+      margin-bottom: 10px;
+    }
+  }
+  

@@ -1,0 +1,73 @@
+/* index.css */
+
+.Homecontainer {
+  margin-left: 250px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  color: #333;
+  width: calc(100% - 250px);
+  background-size: cover;
+  height: 100vh;
+}
+
+.titalheading {
+  margin-top: 56px;
+  color: black;
+  margin-left: 35%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  font-size: 16px;
+  width: calc(33.33% - 20px);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h1,
+.card p {
+  font-size: 18px;
+}
+
+.adminheading{
+  font-size: 20px;
+}
+
+/* Media Query for Smaller Devices */
+@media screen and (max-width: 768px) {
+  .Homecontainer {
+      margin-left: 0;
+      width: 100%;
+      height: 100%;
+  }
+
+  .card {
+      width: calc(50% - 20px);
+  }
+
+  .waves {
+      display: none;
+  }
+
+  .titalheading {
+    
+    margin-left: 0%;
+  }
+}

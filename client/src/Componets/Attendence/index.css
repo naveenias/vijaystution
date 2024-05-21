@@ -1,0 +1,266 @@
+/* index.css */
+
+/* Attendance Container Styles */
+.stuattendence {
+    padding: 40px;
+    padding-left: 290px;
+    padding-top: 60px;
+    width: 100%;
+    background-color: #ecf6fa; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    background-size: cover;
+    height: 100%;
+    background-size: cover;
+  }
+
+  .heading{
+    font-size: 30px;
+    padding-left: 33%;
+  }
+  
+  /* Title Style */
+  h1 {
+    color: #333; /* Dark text color */
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Date Picker Styles */
+  .react-datepicker-wrapper {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .react-datepicker__input-container input {
+    width: 100%; /* Make date picker input full width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Table Container Styles */
+  .tablecontainer {
+    margin-top: 20px;
+  }
+  
+  /* Table Styles */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* White background */
+    margin-bottom: 20px;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Light gray border */
+  }
+  
+  .table th {
+    background-color: #007bff; /* Blue header background */
+    color: #fff; /* White text color */
+    font-weight: bold;
+  }
+  
+  .table th:first-child,
+  .table td:first-child {
+    padding-left: 20px;
+  }
+  
+  /* Attendance Radio Button Styles */
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Submit Button Styles */
+  .btn-primary {
+    background-color: #007bff; /* Blue button background */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+
+
+  
+
+/* Radio Button Container Styles */
+.radio-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Radio Button Styles */
+  .radio-container label {
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .radio-container input[type="radio"] {
+    display: none; /* Hide the default radio button */
+  }
+  
+  .radio-container input[type="radio"] + span {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #007bff; /* Blue border */
+    background-color: #fff; /* White background */
+    margin-right: 5px;
+  }
+  
+  .radio-container input[type="radio"]:checked + span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #007bff; /* Blue dot */
+    display: block;
+  }
+
+
+  
+
+/* Date Picker Styles */
+.react-datepicker-wrapper {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .react-datepicker__input-container input {
+    width: 100%; /* Make date picker input full width */
+    padding: 10px;
+    border: 1px solid #007bff; /* Blue border */
+    border-radius: 5px;
+    font-size: 16px;
+    color: #007bff; /* Blue text color */
+  }
+  
+  .react-datepicker__input-container input:focus {
+    outline: none; /* Remove focus outline */
+    border-color: #0056b3; /* Darker blue border on focus */
+  }
+
+
+ 
+
+/* Container for the Date Picker and Select Class sections */
+.section-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+  }
+  
+  /* Styles for the Date Picker section */
+  .date-picker-container {
+    width: 45%; /* Set width for the Date Picker section */
+    padding-left: 20px;
+  }
+  
+  /* Styles for the Select Class section */
+  .select-class-container {
+    width: 35%; /* Set width for the Select Class section */
+    padding-right: 30px;
+  }
+  
+  
+  .datepicker{
+    margin-left: -80px;
+  }
+
+/* Media Query for screens below 768px */
+@media screen and (max-width: 768px) {
+    /* Attendance Container Styles */
+    .stuattendence {
+        padding-left: 20px;
+        width: 100%;
+       
+    }
+
+    .stdentattendence{
+      width: 1150vw;
+    }
+
+    /* Title Style */
+    .attendheading {
+        padding-left: 80px;
+        text-align: center;
+    }
+
+    /* Styles for the Date Picker section */
+    .date-picker-container {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-left: 0px;
+    }
+
+    /* Styles for the Select Class section */
+    .select-class-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Table Container Styles */
+    .tablecontainer {
+        margin-top: 20px;
+    }
+
+    /* Table Styles */
+    .table th,
+    .table td {
+        padding: -8px;
+        width: -10px;
+        overflow-x: scroll;
+    }
+
+    /* Attendance Radio Button Styles */
+    .radio-container label {
+        margin-right: 5px;
+    }
+    
+    .select-class-container{
+      margin-left: 50%;
+    }
+    .section-container{
+      width: 100%;
+    }
+    
+     .singleline{
+      white-space: nowrap;
+     } 
+
+     .stuattendence{
+      width: 100%;
+     }
+
+     .table{
+      margin-left: -20px;
+     }
+    
+     .section-container {
+      display: flex; 
+      flex-direction: column;
+    }
+
+
+}
+
+  

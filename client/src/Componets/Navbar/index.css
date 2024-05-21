@@ -1,0 +1,54 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar is above other content */
+    height: 8%;
+}
+
+.navbar-brand{
+  margin-left: 20px;
+}
+
+.navbar-toggler{
+  margin-top: -40px;
+  margin-left: 80%;
+  
+}
+
+
+
+.logo{
+  display: none;
+}
+
+.tital{
+  margin-top: 20px;
+  
+  margin-left: 200%;
+}
+
+@keyframes move {
+  0% { transform: translateX(-100%); } /* Start from the left edge */
+  100% { transform: translateX(100%); } /* End at the right edge */
+}
+
+.moving-text {
+  animation: move 5s linear infinite; /* Adjust timing as needed */
+  white-space: nowrap; /* Ensure the text doesn't wrap */
+}
+
+
+
+@media screen and (max-width: 768px){
+  .tital{
+    display: none;
+  }
+
+  .logo{
+    display: block;
+  }
+  
+}
+
+
+ 

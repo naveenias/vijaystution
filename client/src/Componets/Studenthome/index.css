@@ -1,0 +1,57 @@
+.studenthome {
+  display: flex;
+  justify-content: space-around;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+ padding-top: 60px;
+ margin-left: 250px;
+ height: 100vh;
+ padding: 10%;
+ 
+}
+
+
+.heading2{
+  margin-top: 50px;
+  text-decoration: underline;
+}
+
+.heading{
+  padding-bottom: 20px;
+}
+
+.navbar-nav{
+  margin-left: -100px;
+}
+
+
+#usercontainer{
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+ .studenthome {
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 0%;
+    padding-top: 20%;
+    height: 100vh;
+  }
+
+  #usercontainer{
+    margin-left: -8%;
+   
+    width: 115%;
+  }
+
+  #heading{
+    margin-left: -10%;
+  }
+}
