@@ -3,6 +3,7 @@ const express = require('express');
 const app = express(); // Create an Express application
 app.use(express.json()); // Middleware to parse JSON requests
 require('dotenv').config(); // Load environment variables
+const cors = require('cors');
 
 const mongoose = require('mongoose'); // Import Mongoose for MongoDB connection
 
@@ -10,6 +11,10 @@ const mongoose = require('mongoose'); // Import Mongoose for MongoDB connection
 mongoose.connect(process.env.mongo_url);
 const connection = mongoose.connection;
 
+// Configure CORS to allow requests from your frontend
+app.use(cors({
+    origin: 'https://naveenstution.vercel.app', // Replace with your frontend URL
+  }));
 // Event handlers for MongoDB connection status
 connection.on('connected', () => {
     console.log('Mongo DB connected');
