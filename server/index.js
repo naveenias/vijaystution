@@ -13,7 +13,7 @@ const connection = mongoose.connection;
 
 // Configure CORS to allow requests from your frontend
 app.use(cors({
-    origin: 'https://naveenstution.vercel.app', // Replace with your frontend URL
+    origin: 'https://naveenstution.vercel.app/', // Replace with your frontend URL
   }));
 // Event handlers for MongoDB connection status
 connection.on('connected', () => {

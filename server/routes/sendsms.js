@@ -13,7 +13,6 @@ router.post('/sendtext', async (req, res) => {
     try {
         // Extract phone number and message from request body
         const { PhoneNo, message } = req.body;
-
         // Send text message using Twilio client
         const twilioResponse = await client.messages.create({
             body: message,
