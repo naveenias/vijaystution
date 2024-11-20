@@ -80,7 +80,7 @@ class Sendsms extends Component {
 
   updateAttendenceDetails = () => {
     const { selectedDate, details, studentattendencedata } = this.state;
-    const reverseddatedata = studentattendencedata.filter(item => item.date === selectedDate.toLocaleDateString()) || {attendencedata: []};
+    const reverseddatedata = studentattendencedata.filter(item => item.date === selectedDate.toLocaleDateString("en-US").toString()) || {attendencedata: []};
     
     const datedata = reverseddatedata.reverse();
     if (datedata.length === 0){

@@ -58,10 +58,8 @@ class Attendencedetailes extends Component {
   // Function to update attendance details based on selected date and class
   updateAttendenceDetails = () => {
     const { selectedDate, studentclassdetails, studentattendencedata } = this.state;
-    const reverseddatedata = studentattendencedata.filter(item => item.date === selectedDate.toLocaleDateString()) || { attendencedata: [] };
-    
+    const reverseddatedata = studentattendencedata.filter(item => item.date.toString() === selectedDate.toLocaleDateString("en-US").toString()) || {attendencedata: []} ;
     const datedata = reverseddatedata.reverse();
-    
     if (datedata.length === 0) {
       this.setState({ showtext: true, showetable: false });
       alert(`No Attendance taken on ${selectedDate.toLocaleDateString()}`);
