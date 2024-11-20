@@ -14,6 +14,7 @@ const connection = mongoose.connection;
 // Configure CORS to allow requests from your frontend
 app.use(cors({
     origin: 'https://vjsmukyapranastudyzone.vercel.app', // Replace with your frontend URL
+    // origin: "http://localhost:3000"
   }));
 // Event handlers for MongoDB connection status
 connection.on('connected', () => {
